@@ -61,11 +61,11 @@ public static void main(String[] args)throws Exception, IOException {
             if(sl1>1) {
                 for (i=1;i<sl1-1;i++) {
                     driver.findElement(By.cssSelector(".input")).click();
+                    driver.findElement(By.cssSelector(".input")).clear();
                     driver.findElement(By.cssSelector(".input")).sendKeys(soluong1);
                 }
                 driver.findElement(By.cssSelector(".btn-add-to-cart")).click();
             }
-
 
 
 //////////////////////////////////////////////////////////////
@@ -89,6 +89,7 @@ public static void main(String[] args)throws Exception, IOException {
             if(sl2>1) {
                 for (i=1;i<sl2;i++) {
                     driver.findElement(By.cssSelector(".input")).click();
+                    driver.findElement(By.cssSelector(".input")).clear();
                     driver.findElement(By.cssSelector(".input")).sendKeys(soluong2);
                 }
                 driver.findElement(By.cssSelector(".btn-add-to-cart")).click();
@@ -115,6 +116,7 @@ public static void main(String[] args)throws Exception, IOException {
             if(sl3>1) {
                 for (i=1;i<sl3;i++) {
                     driver.findElement(By.cssSelector(".input")).click();
+                    driver.findElement(By.cssSelector(".input")).clear();
                     driver.findElement(By.cssSelector(".input")).sendKeys(soluong3);
                 }
                 driver.findElement(By.cssSelector(".btn-add-to-cart")).click();
