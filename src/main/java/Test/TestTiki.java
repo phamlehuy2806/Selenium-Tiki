@@ -50,6 +50,7 @@ class TestTiki {
 
         driver.findElement(By.cssSelector(".FormSearch__Input-sc-1fwg3wo-2")).sendKeys("oppo");
         driver.findElement(By.cssSelector(".FormSearch__Button-sc-1fwg3wo-3")).click();
+
         driver.findElement(By.cssSelector(".style__StyledItem-sc-18svp8n-0")).click();
     }
     @Test(priority = 1)
@@ -64,8 +65,9 @@ class TestTiki {
 
         driver.manage().window().maximize();
 
-        driver.findElement(By.cssSelector(".FormSearch__Input-sc-1fwg3wo-2")).sendKeys("dien thoai samsung");
-        driver.findElement(By.cssSelector(".FormSearch__Button-sc-1fwg3wo-3")).click();
-        driver.findElement(By.cssSelector(".style__OptionColor-sc-18svp8n-2")).click();
+//        driver.findElement(By.cssSelector(".FormSearch__Input-sc-1fwg3wo-2")).sendKeys("dien thoai samsung");
+//        driver.findElement(By.cssSelector(".FormSearch__Button-sc-1fwg3wo-3")).click();        driver.findElement(By.cssSelector(".FormSearch__Input-sc-1fwg3wo-2")).sendKeys("dien thoai samsung");
+//        driver.findElement(By.cssSelector(".FormSearch__Button-sc-1fwg3wo-3")).click();
+        driver.findElement(By.cssSelector(".Item__Picture-m1oy8w-1")).click();
     }
 }

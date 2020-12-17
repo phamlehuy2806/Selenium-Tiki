@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
+
+
     WebDriver driver;
 
     By homePageUserName = By.xpath("//table//tr[@class='heading3']");
@@ -18,6 +20,7 @@ public class HomePage {
         return driver.findElement(homePageUserName).getText();
 
     }
+
 
     public String verifyHomePageTitle(){
         return driver.getTitle();
